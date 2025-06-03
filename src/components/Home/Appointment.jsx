@@ -4,21 +4,21 @@ import styles from "./Appointment.module.css";
 const steps = [
   {
     number: "01",
-    title: "Registration",
+    title: "Book an Appointment",
     description:
-      "Before you make an appointment with a doctor you are required to register on the website.",
+      "Use our simple online form to schedule an appointment at your convenience.",
   },
   {
     number: "02",
-    title: "Make Appointment",
+    title: "Consult the Doctor",
     description:
-      "Once you are registered you can make an appointment with the doctor via the online form.",
+      "Meet with our specialist at the scheduled time to discuss your health concerns.",
   },
   {
     number: "03",
-    title: "Consulting a Doctor",
+    title: "Follow-Up and Care",
     description:
-      "After that you can meet with the doctor and consult about your illness to the doctor.",
+      "Receive personalized treatment guidance and follow-up support as needed.",
   },
 ];
 
