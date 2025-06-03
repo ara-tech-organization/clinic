@@ -107,7 +107,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#" className={styles.navLink + " d-block py-2"}>
+              <a href="/about" className={styles.navLink + " d-block py-2"}>
                 About
               </a>
             </li>
@@ -117,7 +117,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#" className={styles.navLink + " d-block py-2"}>
+              <a href="/contact" className={styles.navLink + " d-block py-2"}>
                 Contact
               </a>
             </li>
