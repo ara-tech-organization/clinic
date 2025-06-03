@@ -1,0 +1,157 @@
+.aboutSection {
+  display: flex;
+  align-items: flex-start; /* THIS aligns the heading to the top */
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  gap: 3rem;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  /* margin: 5rem 0rem; */
+}
+
+.imageContainer {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.textContainer {
+  flex: 1 1 50%;
+  max-width: 600px;
+  margin-top: 100px; /* Make sure it's aligned to top */
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0; /* remove top margin */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.paragraph span {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.socials i {
+  color: #111;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.socials i:hover {
+  color: #00b89f;
+}
+@media (max-width: 575.98px) {
+  .aboutSection {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .textContainer {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .paragraph span {
+    font-size: 1.4rem;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .aboutSection {
+    flex-direction: column;
+    padding: 3rem 3rem;
+    gap: 2rem;
+  }
+
+  .textContainer {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .paragraph span {
+    font-size: 1.5rem;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+}
+/* 768px - 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .textContainer {
+    margin-top: 60px;
+  }
+
+  .paragraph span {
+    font-size: 1.6rem;
+  }
+}
+
+/* 992px - 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .textContainer {
+    margin-top: 80px;
+  }
+
+  .paragraph span {
+    font-size: 1.8rem;
+  }
+}
+
+/* 1200px - 1399px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .textContainer {
+    margin-top: 90px;
+  }
+}

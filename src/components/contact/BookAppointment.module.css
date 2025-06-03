@@ -1,0 +1,27 @@
+.heroSection {
+  background-color: #00b89f;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Typography */
+.heroSection h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.heroSection p {
+  font-size: 1rem;
+}
+
+
+

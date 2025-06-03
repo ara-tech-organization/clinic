@@ -1,0 +1,131 @@
+/* Footer.module.css */
+.footer {
+  background-color: #001f3f;
+  padding: 4rem 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 3rem 0 0 0;
+}
+
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerBrand {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footerBrand h2 {
+  font-size: 1.75rem;
+  color: #00b89f;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.footerLinks {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footerLinks h3,
+.footerContact h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footerLinks ul li a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.footerLinks ul li a:hover {
+  color: #8f8f8f;
+}
+
+.footerContact {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footerContact p {
+  margin: 0.6rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+
+.footerContact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footerContact a:hover {
+  color: #00b89f;
+}
+
+.socialIcons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.socialIcons a {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00b89f;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  background-color: #00b89f;
+  color: #fff;
+  transform: translateY(-3px);
+}
+.copyrightSection {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #00b89f;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0 !important;
+}

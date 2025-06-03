@@ -1,0 +1,125 @@
+.hero {
+  background: linear-gradient(to right, #f9f9f9 50%, #00b89f 50%);
+  min-height: 100vh;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  text-align: start; /* center align all text inside hero */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem 3rem !important;
+}
+
+.heroImage {
+  max-height: 600px; /* control height */
+  width: auto;
+  object-fit: contain;
+}
+
+.card {
+  bottom: 20%;
+  left: 10%;
+  width: 350px;
+}
+
+.badge {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-weight: 600 !important; /* bold */
+  font-size: 3rem; /* adjust for readability */
+  line-height: 1.3;
+  margin-bottom: rem;
+  max-width: 600px;
+  /* margin-left: auto; */
+  margin-right: auto;
+  color: #212529; /* dark text color */
+}
+
+.hero p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-right: 50px;
+  /* max-width: 550px; */
+  margin: 0 auto 2rem;
+  color: #6c757d; /* muted text */
+  line-height: 1.6;
+}
+
+.start_button {
+  background-color: rgb(192, 32, 32);
+}
+.mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background: linear-gradient(to bottom, #00b89f 50%, #00b89f 50%);
+    padding: 2rem 1.5rem !important; /* adjust padding for small screens */
+    text-align: center; /* optionally center text on smaller devices */
+    align-items: center; /* center flex items vertically */
+    justify-content: center; /* center flex items horizontally */
+  }
+.mobile{
+  display: none;
+}
+  .hero h1 {
+    font-size: 2.5rem; /* smaller heading on small screens */
+    max-width: 100%;
+    margin-right: 0;
+    color: #fff;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    max-width: 100%;
+    color: #fff !important;
+  }
+  .start_button {
+
+  background-color: #ffffff !important;
+  color: #000000 !important;
+
+}
+}
+.start_button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  background-color: #00b89f;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 191, 166, 0.3);
+}
+
+.start_button:hover {
+  background-color: #009e8c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 191, 166, 0.4);
+}
+
+/* Add a slight glowing pulse */
+.glowButton {
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 191, 166, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 191, 166, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 191, 166, 0);
+  }
+}

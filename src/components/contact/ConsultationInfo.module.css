@@ -1,0 +1,175 @@
+.contactSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  justify-content: center;
+  background-color: #f8f9fa;
+  font-family: "Poppins",sans-serif;
+}
+
+.leftContent {
+  flex: 1 1 500px;
+  max-width: 600px;
+  padding: 1rem;
+  color: #333;
+}
+
+.leftContent h2 {
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  color: #00b89f;
+  font-weight: 600;
+}
+
+.leftContent p,
+.leftContent li {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.leftContent ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.rightForm {
+  flex: 1 1 400px;
+  max-width: 530px;
+  padding: 3rem;
+  /* background: #4628a4; */
+  border-radius: 12px;
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Ensure correct layout on desktop */
+@media (min-width: 768px) {
+  .row {
+    flex-wrap: nowrap;
+  }
+}
+
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;           /* allow even growth */
+  min-width: 0;          /* prevent breaking due to long labels */
+}
+.formGroup label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%; /* This is already good */
+  box-sizing: border-box; /* Add this line */
+}
+
+
+.fullWidth {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  align-self: center;
+  background-color: #1cc8b0;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #149c8b;
+}
+
+/* Responsive Design */
+@media (max-width: 575px) {
+  .contactSection {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .row {
+    flex-direction: column !important;
+  }
+
+  .leftContent{
+    padding: 10px 20px;
+  }
+
+  .rightForm{
+    padding: 1rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .contactSection {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contactSection {
+    flex-direction: row;
+  }
+
+   .row {
+    flex-direction: row !important;
+  }
+
+  .rightForm{
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contactSection {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .contactSection {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contactSection {
+    flex-direction: row;
+  }
+}

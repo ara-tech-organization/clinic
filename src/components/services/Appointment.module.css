@@ -1,0 +1,89 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  text-align: center;
+  margin-bottom: 50px !important;
+  font-family: "Poppins",sans-serif;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #001f3f;
+  margin-bottom: 3rem;
+}
+
+.stepsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 3rem;
+}
+
+.step {
+  flex: 1;
+  min-width: 280px;
+  position: relative;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+
+.number {
+  color: #00bfa6 ;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+  text-transform: capitalize;
+}
+
+.description {
+  color: #64748b;
+  font-size: 0.95rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 40px;
+  right: -80px;
+  z-index: 0;
+}
+
+.mirroredArrow {
+  transform: scaleY(-1);
+}
+
+
+@media (max-width: 900px) {
+.container{
+  padding: 10px 20px !important;
+}
+
+  .stepsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
