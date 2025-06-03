@@ -107,4 +107,19 @@
   .heading {
     font-size: 1.5rem;
   }
+
+  .servicesSection{
+    padding: 40px !important;
+  }
 }
+
+@media (max-width:380px){
+  .cardGrid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  padding: 20px;
+}
+}
+

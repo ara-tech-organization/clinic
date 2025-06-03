@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
       <div className={`${styles.mobile} ${styles.mobileHide} col-md-6 position-relative text-center mt-4 mt-md-0`}>
         <img
-          src="/assets/images/Doctor-PNG-Images.png"
+          src="/assets/images/Home-Doctor.png"
           alt="Doctor"
           className={styles.heroImage}
         />

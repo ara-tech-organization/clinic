@@ -20,7 +20,7 @@ const Header = () => {
     >
       <div className="d-flex align-items-center">
         <i
-          className="fas fa-clinic-medical fa-2x me-2 logo-icon"
+          className="fas fa-clinic-medical fa-2x logo-icon"
           style={{ color: "#00b89f" }}
         ></i>
         <h4 className="mb-0">Dr.A.R.Jaswanthini</h4>
